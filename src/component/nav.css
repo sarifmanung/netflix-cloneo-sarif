@@ -22,14 +22,16 @@
   position: fixed;
   top: 10px;
   left: 0;
-  width: 80px;
+  width: 150px;
   object-fit: contain;
   padding-left: 20px;
+  margin-top:-20px;
   cursor: pointer;
 }
 .nav_avatar {
   position: fixed;
   right: 20px;
-  width: 30px;
+  width: 60px;
+  margin-top:-15px;
   cursor: pointer;
 }

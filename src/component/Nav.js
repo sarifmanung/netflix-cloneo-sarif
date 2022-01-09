@@ -24,7 +24,7 @@ function Nav() {
         />
         <img
           className="nav_avatar"
-          src="https://coollogo.net/wp-content/uploads/2021/03/Square-logo.svg"
+          src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg"
         />
       </div>
     </div>
