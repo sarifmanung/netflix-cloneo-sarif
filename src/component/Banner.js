@@ -37,21 +37,17 @@ function Banner() {
       }}
     >
       <div className="banner_contents">
-        <h1 className="banner_title">Movie Name</h1>
+        <h1 className="banner_title">
+          {movie?.title || movie.name || movie.original_name}
+        </h1>
+
         <div className="banner_buttons">
           <button className="banner_button">Play</button>
           <button className="banner_button">My List</button>
           <h1 className="banner_description">
-            {truncate(
-              `This is a test description Marvel Studios' Eternals features an
-            exciting new team of Super Heroes in the Marvel Cinematic Universe,
-            ancient aliens who have been living on Earth in secret for thousands
-            of years. Following the events of Avengers: Endgame, an unexpected
-            tragedy forces them out of the shadows to reunite against mankind's
-            most ancient enemy, the Deviants.`,
-              145
-            )}
+            {truncate(movie?.overview, 160)}
           </h1>
+          <h5>{movie?.first_air_date}</h5>
         </div>
       </div>
       <div className="banner_fadeBottom" />
