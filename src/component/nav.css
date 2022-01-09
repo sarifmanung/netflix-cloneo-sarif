@@ -7,15 +7,17 @@
   z-index: 1;
   /* animation */
   transition-timing-function: ease-in;
-  transition: all 0.5s;
-}
-.nav_contents {
-  display: flex;
-  justify-content: space-between;
+  transition: all 0.7s;
 }
 .nav_black {
   background-color: #111;
 }
+
+.nav_contents {
+  display: flex;
+  justify-content: space-between;
+}
+
 .nav_logo {
   position: fixed;
   top: 10px;
