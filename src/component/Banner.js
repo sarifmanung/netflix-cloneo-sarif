@@ -1,13 +1,16 @@
-import axios from "axios";
-import requests from "./Requests";
 import React, { useEffect, useState } from "react";
 import "./banner.css";
+import axios from "./axios";
+import requests from "./Requests";
 
 function Banner() {
   const [movie, setMovie] = useState([]);
+
   useEffect(() => {
     async function fetchData() {
+      //get data from api(fetchNetflixOriginals)
       const request = await axios.get(requests.fetchNetflixOriginals);
+      //sent random data to movie(setMovie=>movie)
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
@@ -15,6 +18,7 @@ function Banner() {
       );
       return request;
     }
+    //******useEffect ทำงานตรงส่วนนี้เป็นส่วนแรกเสมอ*******
     fetchData();
   }, []);
   console.log(movie);
@@ -28,7 +32,7 @@ function Banner() {
       className="banner"
       style={{
         backgroundSize: "cover",
-        backgroundImage: `url("https://data.1freewallpapers.com/download/texture-black-background-2560x1920.jpg")`,
+        backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`,
         backgroundPosition: "center center",
       }}
     >
