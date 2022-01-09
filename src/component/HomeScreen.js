@@ -4,7 +4,6 @@ import Nav from "./Nav";
 function HomeScreen() {
   return (
     <div className="HomeScreen">
-      HomeScreen
       <Nav />
       {/* Banner */}
       {/* Row */}
