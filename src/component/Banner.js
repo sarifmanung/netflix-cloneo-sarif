@@ -47,7 +47,7 @@ function Banner() {
           <h1 className="banner_description">
             {truncate(movie?.overview, 160)}
           </h1>
-          <h5>{movie?.first_air_date}</h5>
+          <h5 className="banner_date">{movie?.first_air_date}</h5>
         </div>
       </div>
       <div className="banner_fadeBottom" />

@@ -53,3 +53,8 @@
     background-color: #e6e6e6;
     transition:all 0.221s;
 }
+
+.banner_date{
+  margin-top:-24px;
+  margin-left:-0px;
+}
