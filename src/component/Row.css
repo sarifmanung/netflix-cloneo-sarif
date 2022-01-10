@@ -15,7 +15,8 @@
 }
 .row_poster {
   cursor: pointer;
-  max-height: 200px;
+  max-height: 350px;
+  height: 500px;
   object-fit: contain;
   margin-right: 10px;
   width: 100%;
@@ -36,6 +37,6 @@
 
 @media screen and (max-width: 600px) {
   .row_poster {   
-    max-height: 400px;
+    height: 400px;
   }
 }
