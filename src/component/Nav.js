@@ -21,12 +21,14 @@ function Nav() {
         <img
           className="nav_logo"
           src="https://images.ctfassets.net/4cd45et68cgf/7LrExJ6PAj6MSIPkDyCO86/542b1dfabbf3959908f69be546879952/Netflix-Brand-Logo.png?w=684&h=456"
+          alt="Netflix Logo"
         />
         <img
           className="nav_avatar"
           src="https://icon-library.com/images/avatar-icon-images/avatar-icon-images-4.jpg"
+          alt="User Avatar"
         />
-      </div>
+      </div>{" "}
     </div>
   );
 }
